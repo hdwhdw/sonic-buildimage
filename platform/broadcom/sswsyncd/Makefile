@@ -29,8 +29,8 @@ $(BCMCMD): bcmcmd.cpp dsserve.h
 
 install:
 	install -d $(DESTDIR)/usr/sbin
-	install -D $(DSSERVE) $(DESTDIR)/usr/sbin/$(DSSERVE)
-	install -D $(BCMCMD) $(DESTDIR)/usr/sbin/$(BCMCMD)
+	install -D $(DSSERVE) $(DESTDIR)/usr/bin/$(DSSERVE)
+	install -D $(BCMCMD) $(DESTDIR)/usr/bin/$(BCMCMD)
 
 clean:
 	rm -f $(DSSERVE) $(BCMCMD)
